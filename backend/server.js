@@ -14,7 +14,7 @@ import { app, server } from "./socket/socket.js";
 dotenv.config();
 
 app.use(cors({
-	origin: ["https://chatix-api.vercel.app", "https://gossips-bd.vercel.app"],
+	origin: ["https://chatix-api.vercel.app", "https://chatix-bd.vercel.app"],
 	methods: ["POST", "GET"],
 	credentials: true
 }));
