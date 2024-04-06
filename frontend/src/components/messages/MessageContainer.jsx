@@ -18,7 +18,7 @@ const MessageContainer = () => {
 	const isOnline = onlineUsers.includes(selectedConversation?._id);
 
 	return (
-		<div className='md:min-w-[450px] flex flex-col ml-2'>
+		<div className='md:min-w-[600px] flex flex-col ml-2'>
 			{!selectedConversation ? (
 				<NoChatSelected />
 			) : (
