@@ -1,4 +1,4 @@
-# MERN Stack Project: Build a Real Time Chat App | JWT, Socket.io
+# MERN Stack Project: Real Time Chat App | JWT, Socket.io
 
 Some Features:
 
@@ -16,6 +16,12 @@ Some Features:
 PORT=...
 MONGO_DB_URI=...
 JWT_SECRET=...
+```
+
+### Install dependencies
+
+```shell
+npm install
 ```
 
 ### Build the app
