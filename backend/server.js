@@ -2,7 +2,6 @@ import path from "path";
 import express from "express";
 import dotenv from "dotenv";
 import cookieParser from "cookie-parser";
-import cors from "cors";
 
 import authRoutes from "./routes/auth.routes.js";
 import messageRoutes from "./routes/message.routes.js";
@@ -12,12 +11,6 @@ import connectToMongoDB from "./db/connectToMongoDB.js";
 import { app, server } from "./socket/socket.js";
 
 dotenv.config();
-
-app.use(cors({
-	origin: ["https://chatix-api.vercel.app", "https://chatix-bd.vercel.app"],
-	methods: ["POST", "GET"],
-	credentials: true
-}));
 
 const __dirname = path.resolve();
 

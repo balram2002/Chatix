@@ -15,7 +15,7 @@ export const SocketContextProvider = ({ children }) => {
 
 	useEffect(() => {
 		if (authUser) {
-			const socket = io("https://chatix-api.vercel.app", {
+			const socket = io("/", {
 				query: {
 					userId: authUser._id,
 				},
